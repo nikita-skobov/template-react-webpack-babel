@@ -1,5 +1,6 @@
 module.exports = {
   entry: './src/entry.js',
+  watch: true,
   module: {
     rules: [
       {
