@@ -1,3 +1,18 @@
+// module.exports = {
+//   entry: './src/entry.js',
+//   watch: true,
+//   module: {
+//     rules: [
+//       {
+//         test: /\.js$/,
+//         exclude: /node_modules/,
+//         loaders: ["babel-loader"]
+//       }
+//     ]
+//   }
+// };
+
+
 module.exports = {
   entry: './src/entry.js',
   watch: true,
@@ -6,9 +21,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        loaders: ["babel-loader", "pug-as-jsx-loader"]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   }

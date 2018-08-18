@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Root from './Root'
+
 
 ReactDOM.render(
-  <h1>Hello wurld!</h1>, document.getElementById('react-container')
+  <Root />, document.getElementById('react-container')
 )
